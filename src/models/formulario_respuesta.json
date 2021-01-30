@@ -1,0 +1,23 @@
+{
+    "name": "FormularioRespuesta",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int",
+            "unique": true
+        },
+        "data": {
+            "type": "simple-json"
+        },
+        "sincronizado": {
+            "type": "boolean"
+        }
+    },
+    "relations": {
+        "formulario": {
+            "target": "Formulario",
+            "type": "many-to-one",
+            "joinColumn": true
+        }
+    }
+}

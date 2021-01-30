@@ -1,0 +1,21 @@
+{
+    "name": "Municipio",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int",
+            "unique": true
+        },       
+        "nombre": {
+            "type": "varchar",
+            "null": true
+        }       
+    },
+    "relations": {
+        "departamento": {
+            "target": "Departamento",
+            "type": "many-to-one",
+            "joinColumn": true
+        }
+    }
+}

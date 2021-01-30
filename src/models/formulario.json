@@ -1,0 +1,43 @@
+{
+    "name": "Formulario",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int",
+            "unique": true
+        },
+        "id_modo": {            
+            "type": "int",
+            "nullable": true
+        },
+        "fecha_fin": {
+            "type": "date",
+            "nullable": true
+        },
+        "fecha_inicio": {
+            "type": "date",
+            "nullable": true
+        },
+        "nombre": {
+            "type": "varchar",
+            "nullable": true
+        },
+        "nota_maxima": {
+            "type": "varchar",
+            "default": "0.00"
+        },
+        "url": {
+            "type": "varchar"
+        },
+        "secciones":{
+            "type": "varchar"
+        }       
+    },
+    "relations": {
+        "respuestas": {
+            "target": "FormularioRespuesta",
+            "type": "one-to-many",
+            "inverseSide": "formulario"
+        }
+    }
+}

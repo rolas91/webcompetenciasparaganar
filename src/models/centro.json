@@ -1,0 +1,24 @@
+{
+    "name": "Centro",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int",
+            "unique": true
+        },
+        "nombre": {
+            "type": "varchar"
+        },
+        "checked": {
+            "type": "int",
+            "default": 0
+        }
+    },
+    "relations": {
+        "cursos": {
+            "target": "Curso",
+            "type": "one-to-many",
+            "inverseSide": "centro"            
+        }
+    }
+}

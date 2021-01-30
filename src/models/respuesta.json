@@ -1,0 +1,58 @@
+{
+    "name": "Respuestas",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int"
+        },
+        "id_respuesta":{
+            "type":"int"         
+        },
+        "id_centro": {            
+            "type": "int",
+            "default": -1,
+            "nullable": true
+        },
+        "id_formulario": {            
+            "type": "int"
+        },
+        "id_curso": {            
+            "type": "int",
+            "default": -1,
+            "nullable": true
+        },
+        "formulario": {
+            "type": "varchar"
+        },
+        "id_participante": {            
+            "type": "int",
+            "default": -1
+        },
+        "enviado": {            
+            "type": "int",
+            "default": -1
+        },
+        "nombre_participante": {
+            "type": "varchar",
+            "nullable":true
+        },
+        "correo_participante": {
+            "type": "varchar",
+            "nullable":true
+        },
+        "fecha_inicio":{
+            "type": "varchar"
+        },
+        "fecha_fin":{
+            "type": "varchar"
+        },
+        "tipo_identidad":{
+            "type": "varchar",
+            "nullable":true
+        },
+        "doc_identidad":{
+            "type": "varchar",
+            "nullable":true
+        }
+    }
+}

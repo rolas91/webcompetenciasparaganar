@@ -1,0 +1,33 @@
+{
+    "name": "Matriculas",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int"
+        },
+        "documento_identidad": {
+            "type": "varchar",
+            "nullable": true
+        },
+        "telefono": {
+            "type": "varchar",
+            "nullable": true
+        },
+        "correo": {
+            "type": "varchar",
+            "nullable": true
+        },
+        "data": {
+            "type": "varchar"
+        },
+        "id_curso": {            
+            "type": "int"
+        },
+        "id_participante": {            
+            "type": "int"
+        },
+        "nombre": {
+            "type": "varchar"
+        }
+    }
+}

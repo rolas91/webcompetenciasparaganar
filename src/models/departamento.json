@@ -1,0 +1,21 @@
+{
+    "name": "Departamento",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int",
+            "unique": true
+        },       
+        "nombre": {
+            "type": "varchar",
+            "null": true
+        }       
+    },
+    "relations": {
+        "municipios": {
+            "target": "Municipio",
+            "type": "one-to-many",
+            "inverseSide": "departamento"
+        }
+    }
+}

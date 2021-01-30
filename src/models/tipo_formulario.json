@@ -1,0 +1,14 @@
+{
+    "name": "TipoFormulario",
+    "columns": {
+        "id": {
+            "primary": true,
+            "type": "int",
+            "unique": true
+        },       
+        "nombre": {
+            "type": "varchar",
+            "null": true
+        }       
+    }   
+}
